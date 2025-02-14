@@ -9,4 +9,23 @@ void main() {
 
   // Numara Tanımlaması
   print(2 + 3);
+
+  // ? String
+  // Daha efektif kod yazmak için yazdıracağımız veri değişkene atanır.
+  // İsimlendirme yaparken anlamlı bir isimlendirme yapmamız daha iyi olur.
+  String metin = 'Lorem ipsum 3';
+
+  print(metin);
+  print(metin);
+  print(metin);
+  print(metin);
+  print(metin);
+  print(metin);
+
+  // ? int
+  int money = 15;
+  // Farklı veri tiplerini toplayamayız. Bu yüzden String interpolation kullanılabilir.
+  print(metin + money.toString());
+  // Ya da çağıracağımız nesneyi '$money' yazabiliriz.
+  print(metin + ' ' + '$money');
 }
