@@ -23,11 +23,11 @@ void main() {
   // yeni müsteri gelecek adı bank2musteri
   // yeni bankaya gelenden bu bank user 1 parasını çıkartıp ekranda göster.
 
-  const bankName = 'GBANK';
-  const String bankUser1 = 'bank1musteri';
+  // const bankName = 'GBANK';
+  //  const String bankUser1 = 'bank1musteri';
   const double bankUser1Money = 100.00;
 
-  const String bankUser2 = 'bank2musteri';
+  // const String bankUser2 = 'bank2musteri';
   int bankUser2Money = 500;
 
   bankUser2Money =
