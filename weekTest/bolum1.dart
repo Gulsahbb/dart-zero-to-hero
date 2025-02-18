@@ -108,7 +108,7 @@ void main() {
     print('Lütfen geçerli bir değer girin.');
   }*/
 
-  /* print('Şifrenizi giriniz. : ');
+  print('Şifrenizi giriniz. : ');
   String? password = stdin.readLineSync();
 
   if (password!.length < 8) {
@@ -119,5 +119,7 @@ void main() {
     print('Şifre en az bir küçük harf içermelidir.');
   } else {
     print('Şifre geçerli.');
-  }*/
+  }
+
+  // TODO BÖLÜM 2 - BÖLÜM 3 DEVAM
 }
