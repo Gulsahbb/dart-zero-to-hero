@@ -22,3 +22,9 @@ class User2 {
         '$customerName isimli müşterinin şehri ${(customerCity ?? 'İstanbul')}';
   }
 }
+
+extension User2ControlExtension on User2 {
+  void controlName() {
+    print(customerName);
+  }
+}
