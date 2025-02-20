@@ -28,6 +28,15 @@ void main(List<String> args) {
   // Idsi aynı olanlar aynı müşteri olmalıdır.
 
   print(moneyBank1.id == moneyBank2.id);
+
+  // Müşteri parasına 10 ekle. id yi 1 arttır.ismini veli yap
+  moneyBank1.money += 10;
+  print('Banka 1 Para : ${moneyBank1.money}');
+
+  moneyBank1
+    ..money += 10
+    ..updateName('veli');
+  print('${moneyBank1.money} + ${moneyBank1.name} + ${moneyBank1.id}');
 }
 
 class _User {
@@ -48,13 +57,18 @@ class _User {
   }
 }
 
-class Bank {
-  final int money;
+class Bank with BankMixin {
+  int money;
   final String id;
+  String? name;
   Bank(this.money, this.id);
 
   int operator +(Bank newBank) {
     return money + newBank.money;
+  }
+
+  void updateName(String name) {
+    this.name = name;
   }
 
   @override
@@ -65,5 +79,18 @@ class Bank {
   @override
   bool operator ==(Object object) {
     return object is Bank && object.id == id;
+  }
+
+  @override
+  void sayHello() {
+    calculateMoney(money);
+  }
+}
+
+// Bİrden fazla durum varsa kullanılır.
+mixin BankMixin {
+  void sayHello();
+  void calculateMoney(int money) {
+    print('money');
   }
 }
