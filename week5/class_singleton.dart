@@ -1,3 +1,5 @@
+import 'model/product_config_model.dart';
+
 void main(List<String> args) {
   //  final newProduct = Product.money;
   calculateMoney();
@@ -9,6 +11,9 @@ void main(List<String> args) {
   final newProduct = Product(user1.product);
   final newProduct2 = Product.fromuser(user1);
   Product.veli();
+
+  // api key ne acaba
+  ProductConfig.instance.apiKey;
 }
 
 void calculateMoney() {
