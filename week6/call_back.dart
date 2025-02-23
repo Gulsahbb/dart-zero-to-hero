@@ -10,6 +10,7 @@ void main(List<String> args) {
 typedef CalculateCallBack = int Function(int data);
 
 class User {
+  @deprecated
   int money;
   User({required this.money});
   void calculateMoney(CalculateCallBack onComplete) {
